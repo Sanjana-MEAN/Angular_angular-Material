@@ -1,0 +1,87 @@
+<div class="container">
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Profile Page</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image class="profile-img" src="../../assets/profile.png" alt="Photo of a Shiba Inu">
+        <button (click)="edit !== edit">
+            <mat-icon>edit</mat-icon>
+        </button> 
+            <div *ngIf="edit === true">
+                <button mat-stroked-button>Change Image</button>
+                <button mat-stroked-button>Update Image</button>
+                <button mat-stroked-button (click)="cancel()">cancel</button>
+            </div>
+        
+        <mat-card-content>
+            <form class="form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                <div>
+                    <div>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>First Name</mat-label>
+                            <input matInput placeholder="Ex. John" formControlName="firstName">
+                          </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Last Name</mat-label>
+                            <input matInput placeholder="Ex. John" formControlName="lastName">
+                          </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Email</mat-label>
+                            <input type="email" matInput
+                                   placeholder="Ex. pat@example.com" formControlName="email">
+                            <mat-hint>Errors appear instantly!</mat-hint>
+                          </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="fill" class="example-full-width">
+                            <mat-label>Date of Birth</mat-label>
+                            <input matInput [matDatepicker]="picker" formControlName="dateOfBirth">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                          </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="fill" class="example-full-width">
+                            <mat-label>Anniversary</mat-label>
+                            <input matInput [matDatepicker]="anniversary" formControlName="anniversary">
+                            <mat-datepicker-toggle matSuffix [for]="anniversary"></mat-datepicker-toggle>
+                            <mat-datepicker #anniversary></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Gender</mat-label>
+                            <select matNativeControl formControlName="gender">
+                                <option *ngFor="let gender of genders">{{gender}}</option>
+                            </select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="example-full-width" >
+                            <mat-label>Nationality</mat-label>
+                            <select matNativeControl formControlName="nationality">
+                                <option *ngFor="let country of countries">{{country}}</option>
+                            </select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>State</mat-label>
+                            <select matNativeControl formControlName="state">
+                                <option *ngFor="let state of states">{{state}}</option>
+                            </select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <button mat-stroked-button type="submit" [disabled]="!profileForm.valid">Update Profile</button>    
+                    </div>
+                </div>
+            </form>
+        </mat-card-content>
+      </mat-card>
+</div>

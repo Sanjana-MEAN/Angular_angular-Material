@@ -1,0 +1,59 @@
+<div id="container">
+    <div class="fullcontainer">
+    <form #loginForm='ngForm' (ngSubmit)="login(loginForm.value)">
+        <div class="form-all">
+            <div class="form-group">
+                <label for="firstname">User Name</label>&nbsp;
+                <input type="text" name="firstname" [(ngModel)]="firstname" required>
+                <em class="em-firstname" id="required"
+                    *ngIf="loginForm.controls['firstname']?.invalid && (loginForm.controls['firstname']?.touched || mouseoverLogin)">*Required</em>
+                <span (mouseenter)="mouseoverLogin === true" ((mouseleave))="mouseoverLogin === false"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>&nbsp;
+                <input type="password" name="password" [(ngModel)]="password" required #passwordInput = "ngModel" (focus)="onPasswordFocus()">
+                <em class="em-password" id="required"
+                    *ngIf="loginForm.controls['password']?.invalid && (loginForm.controls['password']?.touched || mouseoverLogin)">*Required</em>
+                <span (mouseenter)="mouseoverLogin === true" ((mouseleave))="mouseoverLogin === false"></span>
+            </div>
+            <div class="login-button">
+                <button class="submit" type="submit" [disabled]="loginForm?.invalid">Login</button>
+            </div>
+            <div class="login-button">
+                <button class="cancel" type="button" (click)="cancel()">Cancel</button>
+            </div>
+        </div>
+    </form>
+    <div class="ear-l"></div>
+    <div class="ear-r"></div>
+    <div class="panda-face">
+        <div class="eye-l">
+            <div class="eyeball-l"></div>
+            <div class="blush-l"></div>
+        </div>
+        <div class="eye-r">
+            <div class="eyeball-r"></div>
+            <div class="blush-r"></div>
+        </div>
+        <div class="nose"></div>
+        <div class="mouth"></div>
+        <div class="mouth-d"></div>
+    </div>
+    <div class="hand-l" *ngIf= "!isPasswordTouched"></div>
+    <div class="hand-r" *ngIf= "!isPasswordTouched"></div>
+    <div class="hand-l-l" [ngClass]="{'eye-close-l': isPasswordTouched}"></div>
+    <div class="hand-r-l" [ngClass]="{'eye-close-r': isPasswordTouched}"></div>
+    <div class="paw-l">
+        <div class="big-dot"></div>
+        <div class="small-dot-l"></div>
+        <div class="small-dot-r"></div>
+        <div class="small-dot-m"></div>
+    </div>
+    <div class="paw-r">
+        <div class="big-dot"></div>
+        <div class="small-dot-l"></div>
+        <div class="small-dot-r"></div>
+        <div class="small-dot-m"></div>
+    </div>
+    </div>
+</div>

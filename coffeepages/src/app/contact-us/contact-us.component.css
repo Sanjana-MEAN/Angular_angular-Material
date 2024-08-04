@@ -1,0 +1,66 @@
+.container{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    padding: 20px;
+    background-color: #372c2a;
+}
+
+.header{
+    display: flex;
+    text-align: center;
+    color: bisque;
+    font-family: myFont;
+    align-items: center;
+    font-size: 100px;
+    padding-bottom: 30px;
+    position: relative;
+    align-self: center;
+}
+
+.quotes{
+    font-size: 20px;
+    font-family: secondFont;
+    color: #dac4b5;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.heading{
+    font-size: 40px;
+    font-family: thirdFont;
+    position: relative;
+    color: #dac4b5;
+    align-items: center;
+}
+
+.paragraph{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    line-height: 20px;
+    color: #dac4b5;
+}
+form{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.button{
+    display: flex;
+    background-color: #dac4b5;
+    color: black;  
+    border-bottom: 20px;
+}
+@font-face {
+    font-family: myFont;
+    src: url(BillyArgelFont.ttf);
+  }
+  
+  @font-face {
+    font-family: secondFont;
+    src: url(DancingScript.ttf);
+  }
+  
+  @font-face {
+    font-family: thirdFont;
+    src: url(PoetsenOne.ttf);
+  }

@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 15px;
+    padding-inline-start: 40px;
+    /* background-color: blue; */
+    background-color: #372c2a;
+}
+
+.example-card{
+  /* background-color: #dac4b5; */
+    /* flex: 1 1 calc(33.333% - 20px);  */
+  /* box-sizing: border-box;  */
+  /* padding: 10px; */
+  /* height: auto; */
+  /* background: #f1f1f1;  */
+  /* border: 1px solid #ccc;  */
+  /* border-radius: 5px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap-reverse; */
+    padding: 10px;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #dac4b5;;
+}
+ .example-header-image{
+  /* display: flex;
+  flex-wrap: wrap;
+  width: 0.5%;
+  height: auto; */
+  /* width: 1cm; */
+  /* height: 1cm; */
+  background-size: cover;
+  height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-bottom: 16px;
+    object-fit: cover;
+ }  
+.para{
+  font-weight: bold;
+  /* color: #b8b4aa; */
+  color: #372c2a;
+  font-family: secondFont;
+  padding: 10px;
+}
+.location{
+  font-weight: bold;
+  /* color: #b8b4aa; */
+  color: #372c2a;
+}
+.title{
+  font-weight: bold;
+  /* color: #b8b4aa; */
+  color: #372c2a;
+  font-family: secondFont;
+}
+.subtitle{
+  font-weight: bold;
+  /* color: #b8b4aa; */
+  color: #372c2a;
+}
+@font-face {
+  font-family: myFont;
+  src: url(BillyArgelFont.ttf);
+}
+@font-face {
+  font-family: secondFont;
+  src: url(DancingScript.ttf);
+}

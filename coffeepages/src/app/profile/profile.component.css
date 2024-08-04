@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.profile-img{
+    position: relative;
+    border-radius: 50%;
+    max-width: 250px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.example-full-width{
+  width: 250px;
+  height: auto;
+}

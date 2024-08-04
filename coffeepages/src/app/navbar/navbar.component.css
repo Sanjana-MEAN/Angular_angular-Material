@@ -1,0 +1,40 @@
+/* .total-navbar{
+  display: flex;
+  justify-content: space-around;
+} */
+.example-container {
+    height: 100vh;
+    /* color: #372c2a; */
+  }
+  
+.mat-drawer {
+    width: 250px;
+  }
+.mat-drawer-content{
+  background-color: #372c2a;
+}
+.mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+.toolbar{
+    background-color: #372c2a;
+    color: bisque;
+}
+.sidenav{
+  color: #372c2a !important;
+  background-color: #b8b4aa !important;
+  /* text-decoration-color: bisque; */
+}
+/* .navbar-gap{
+  display: flex; */
+  /* margin-right: 80px; */
+  /* gap: 100px; */
+/* } */
+/* .sidelist{
+  color: #b8b4aa !important;
+} */
+/* .mat-list-item{
+  color: #b8b4aa;
+} */

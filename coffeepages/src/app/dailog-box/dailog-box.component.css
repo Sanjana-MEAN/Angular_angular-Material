@@ -1,0 +1,53 @@
+mat-dialog-title,
+mat-dialog-content,
+mat-dialog-actions,
+mat-button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: bisque;
+}
+mat-dialog-title{
+    font-family: myFont;
+}
+.container{
+    background-color: #372c2a;
+}
+/* .cdk-overlay-container {
+    position: relative;
+    z-index: 1000; 
+  /* }
+  
+  .cdk-overlay-backdrop {
+    backdrop-filter: blur(5px); /* Adjust blur intensity */
+    /* background-color: rgba(0, 0, 0, 0.5); Optional: Add a semi-transparent background */
+  /* }
+  .custom-backdrop {
+    backdrop-filter: blur(5px); /* Adjust blur intensity */
+    /* background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+  /* }  */ 
+   
+.gap{
+    border-bottom: 10px;
+}
+mat-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+@font-face {
+    font-family: myFont;
+    src: url(BillyArgelFont.ttf);
+  }
+  
+  @font-face {
+    font-family: secondFont;
+    src: url(DancingScript.ttf);
+  }
+  
+  @font-face {
+    font-family: thirdFont;
+    src: url(PoetsenOne.ttf);
+  }

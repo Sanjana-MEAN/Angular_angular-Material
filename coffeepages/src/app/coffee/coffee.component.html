@@ -1,0 +1,71 @@
+<div class="container" *ngIf="shopowner">
+  <mat-card *ngFor="let coffee of coffees" class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image">
+          <img mat-card-image [src]="" alt="">
+        </div>
+        <mat-card-title class="title">{{ coffee.style }}</mat-card-title>
+        <mat-card-subtitle class="subtitle">{{shopowner.name}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="coffee.images" alt="{{ coffee.style }}">
+      <mat-card-content>
+        <p class="para">{{ coffee.description }}</p>
+        <p class="location">
+          {{ coffee.data }}
+        </p>
+        <div>
+            <button class="ingredients-heading" (click)="ingredients(coffee.id)"> Ingredients </button>
+           <div class="ingredients-value" *ngIf="ingredientsVisibity[coffee.id]">
+            <ul>
+              <li *ngFor="let item of coffee.Ingredients | keyvalue">
+                <h4>{{ item.key }}: {{ item.value }}%</h4>
+              </li>
+            </ul>
+           </div>
+          </div>
+      </mat-card-content>
+      <mat-card-actions class="all-buttons">
+        <button mat-icon-button class="favorite-icon" aria-label="Example icon-button with heart icon" (click)="wished(coffee)">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="share-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+        <div class="mat-flat-button" *ngFor="let cost of coffee.costs | keyvalue">
+          <button mat-button>{{cost.key}} - {{cost.value}}</button>
+        </div>
+      </mat-card-actions> 
+      <mat-card-actions class="all-buttons">
+        <div class="mat-stroked-button Back" (click)="backButton()">
+          <button mat-stroked-button>Back</button>
+        </div>
+        <div class="mat-stroked-button" (click)="addToCart(coffee)">
+          <button mat-stroked-button>Add To Cart</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+</div>
+  
+<!-- <mat-card *ngFor="let coffee of coffees">
+  <mat-card-header>
+    <mat-card-title>{{ coffee.style }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="coffee.images" alt="{{ coffee.style }}">
+  <mat-card-content>
+    <p>{{ coffee.description }}</p>
+    <p>{{ coffee.data }}</p>
+    <div>
+      <p>Ingredients:</p>
+      <ul>
+        <li *ngFor="let item of coffee.Ingredients | keyvalue">
+          {{ item.key }}: {{ item.value }}
+        </li>
+      </ul>
+    </div>
+  </mat-card-content>
+</mat-card> -->
+
+
+
+
+   

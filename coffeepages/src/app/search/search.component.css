@@ -1,0 +1,11 @@
+input {
+    font-size: 10px; /* Adjust font size if needed */
+    padding: 5px; /* Adjust padding for larger input */
+    margin-bottom: 10px;
+  }
+
+.symbol{
+    padding: -10px;
+    top: -50%;
+    border-top: 10px;
+  }

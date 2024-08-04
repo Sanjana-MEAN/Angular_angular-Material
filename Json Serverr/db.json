@@ -1,0 +1,84 @@
+{
+  "login": [
+    {
+      "id": "1",
+      "firstname": "sanjana",
+      "password": "aaa"
+    },
+    {
+      "id": "2",
+      "firstname": "sai",
+      "password": "bbb"
+    },
+    {
+      "id": "d6c6",
+      "firstname": "sanjana",
+      "password": "aaa"
+    },
+    {
+      "id": "9c8b",
+      "firstname": "sanjana",
+      "password": "aaa"
+    },
+    {
+      "id": "85f4",
+      "firstname": "sanjana",
+      "password": "aaa"
+    },
+    {
+      "id": "c892",
+      "firstname": "sanjana",
+      "password": "aaa"
+    },
+    {
+      "id": "8ead",
+      "firstname": "sanjana",
+      "password": "eee"
+    }
+  ],
+  "profile": [
+    {
+      "id": "1",
+      "firstname": "sanjana",
+      "lastname": "vanaparthi",
+      "preferedname": "sanjana",
+      "email": "s.s@gmail.com",
+      "dateOfBirth": "21/04/2002",
+      "aniversary": "5/6/2023",
+      "gender": "Female",
+      "nationality": "India",
+      "state": "Telangana"
+    },
+    {
+      "id": "85f4",
+      "firstName": "sanjana",
+      "lastName": "v",
+      "preferedName": "",
+      "email": "s@gmail.com",
+      "dateOfBirth": "2002-04-20T18:30:00.000Z",
+      "anniversary": "2023-08-20T18:30:00.000Z",
+      "gender": "Female",
+      "nationality": "",
+      "state": "Maharashtra"
+    },
+    {
+      "id": "8ead",
+      "firstName": "sanjana",
+      "lastName": "vv",
+      "preferedName": "",
+      "email": "s.s@gmail.com",
+      "dateOfBirth": "2002-08-20T18:30:00.000Z",
+      "anniversary": "2017-07-17T18:30:00.000Z",
+      "gender": "Female",
+      "nationality": "",
+      "state": "Telangana"
+    }
+  ],
+  "contact": [
+    {
+      "name": "sanjana",
+      "email": "s.s@gmail.com",
+      "message": "yes"
+    }
+  ]
+}

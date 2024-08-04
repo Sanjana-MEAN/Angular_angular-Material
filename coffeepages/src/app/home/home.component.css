@@ -1,0 +1,104 @@
+.background{
+  background-image: url(../../assets/background7.png);
+  background-size: cover;
+  background-position: center;
+  padding: 64px;
+}
+.main-heading{
+  /* width: 100%;
+  height: auto;*/
+  display: flex;
+  /* margin-top: 10px; */
+  /* overflow: visible !important; */
+  font-size: 120px !important;
+  font-family: myFont;
+  /* font-weight: bold; */
+  font-size: 100px;
+  line-height: 1 !important;
+  /* align-items: center !important; */
+  justify-content: center !important;
+  color: #b8b4aa;
+  /* margin-bottom: 20px !important; */
+
+} 
+
+.sub-heading{
+  display: flex;
+  flex-direction: column !important;
+  /* margin-top: 20px; */
+  align-items: center !important;
+  align-self: self-start !important;
+  color: #b8b4aa;
+  /* padding: 20px; */
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(BillyArgelFont.ttf);
+}
+
+@font-face {
+  font-family: secondFont;
+  src: url(DancingScript.ttf);
+}
+
+@font-face {
+  font-family: thirdFont;
+  src: url(PoetsenOne.ttf);
+}
+
+.para1{
+  font: optional;
+  font-size: 30px;
+  font-family: secondFont;
+  padding-bottom: 20px;
+  line-height: 30px;
+  color: #b8b4aa;
+  /* font-weight: 100; */
+  color: #b8b4aa;
+
+}
+
+.para2{
+  font: optional;
+  font-size: 20px;
+  font-family: thirdFont;
+  padding-bottom: 20px;
+  line-height: 20px;
+  justify-content: center;
+  color: #b8b4aa;
+  /* font-weight: 100; */
+
+}
+
+/* .video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  /* margin: auto;
+}
+
+video {
+  width: 100%; */
+  /* align-self: self-start; */
+  /* height: 100%;
+  display: block;
+  background-color: red; */
+  /* pointer-events: none; /* Prevents default control interactions */
+/* } */
+
+/* .mat-grid-list{ */
+/* ; */
+  /* padding-right: 20px; */
+/* }  */
+ /* .heading{
+  font-size: 100px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center;
+  font-weight: bold;*/
+/* }   */
+
+/* mat-grid-tile {
+    background: lightblue;
+  } */
