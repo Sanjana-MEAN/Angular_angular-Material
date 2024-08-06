@@ -11,8 +11,6 @@
     <a style="margin-right: 20px; font-size: large;" mat-button routerLink="/wishlist">Wishlist</a>
     <span style="margin-left: 200px; font-size: large;">Search:</span>
     <app-search (searchEvent)="onSearch($event)"></app-search>
-    <!-- <span><input type="text" name="search" [(ngModel)]="enteredValue" (input)="Onsearch($event)"> -->
-    <!-- </span> -->
   </mat-toolbar>
   
   <mat-drawer-container class="example-container">
@@ -20,7 +18,6 @@
       <mat-nav-list class="sidelist" >
         <a mat-list-item routerLink="/login"></a>
         <a mat-list-item routerLink="/profile" >Profile</a>
-        <!-- <a mat-list-item routerLink="/home">Home</a> -->
         <a mat-list-item routerLink="/aboutUs">About Us</a>
         <a mat-list-item routerLink="/contactUs">Contact</a>
         <a mat-list-item routerLink="/help">Help</a>
@@ -32,6 +29,5 @@
   </mat-drawer-container>
 </div>
 
-<!-- <app-search></app-search> -->
 
   

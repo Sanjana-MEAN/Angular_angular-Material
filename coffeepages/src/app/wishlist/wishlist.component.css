@@ -1,18 +1,18 @@
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding-top: 15px;
-    padding-inline-start: 40px;
-    background-color: #372c2a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: 15px;
+  padding-inline-start: 40px;
+  background-color: #372c2a;
 }
 
 .example-card{
-    padding: 10px;
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-    background-color: #dac4b5;;
+  padding: 10px;
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #dac4b5;
 }
 
 .heading{

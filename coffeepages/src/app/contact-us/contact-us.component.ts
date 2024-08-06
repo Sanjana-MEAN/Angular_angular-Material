@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-// import { contact } from '../contactInterface';
 import { LoginFormService } from '../login-form.service';
 import { ShowmessageService } from '../showmessage.service'; 
 @Component({

@@ -35,16 +35,12 @@ export class LoginComponent implements OnInit{
 
     this.userEnteredFirstName = loginForms.firstname;
     this.userEnteredPassword = loginForms.password;
-    // console.log('chicken', this.userEnteredFirstName, this.userEnteredPassword);
     await this.loginService.loginData().forEach(async users => {
       const existingUser = await users['find']((user: { firstname: string; password: any; }) => user.firstname === this.userEnteredFirstName && user.password === this.userEnteredPassword)
-										 
 
-      // console.log('existingUser', existingUser);
       if(existingUser){
         localStorage.setItem('authentication', existingUser);
-        this.router.navigate(['home']);
-								
+        this.router.navigate(['home']);					
       }
       else{
         const newUser= {
@@ -53,7 +49,6 @@ export class LoginComponent implements OnInit{
 
         this.loginService.submitLogin(newUser).subscribe((res: loginUser) => {
           localStorage.setItem('newloginId', res.id);
-          // console.log('response', res.id);
           this.router.navigate(['profile']);
         this.authService.setLogin(this.userEnteredFirstName, this.userEnteredPassword);
         this.show.sendSuccess();

@@ -12,10 +12,8 @@ import * as _ from 'lodash';
 })
 export class CoffeeComponent implements OnInit{
   shopowner: any;
-  // coffee: any[] = [];
   coffees: any[] = [];
   displayAllCoffee: boolean = false;
-  // coffeeIngredients: boolean = false;
   coffeeIds: number | undefined;
   wishlist: any[] =[];
   isIngredients: boolean = false;
@@ -46,18 +44,14 @@ export class CoffeeComponent implements OnInit{
     this.router.navigate(['/shop-owners']);
   }
   addToCart(coffee: any){
-    // console.log('coffee', coffee);
     let coffeeClone = _.cloneDeep(coffee);
     let cart = JSON.parse(localStorage.getItem('cart') || '[]');
     cart.push(coffeeClone);
-    // console.log('storage', coffee);
     localStorage.setItem('cart', JSON.stringify(cart));
     this.show.addedToCart();
   }
 
   ingredients(coffeeId: number){
-    // this.coffeeIngredients = !this.coffeeIngredients;
-
     this.ingredientsVisibity[coffeeId] = !this.ingredientsVisibity[coffeeId];
   }
 
