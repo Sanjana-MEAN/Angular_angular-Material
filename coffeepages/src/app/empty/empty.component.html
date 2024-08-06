@@ -1,3 +1,8 @@
-<div class="empty-cup">
-    <img src="assets/images/emptyCup.jpg">
+<div class="container">
+    <div *ngIf="item === 'wishlist'" class="empty-wishlist" >
+        <img src="assets/images/emptyCup.png">
+    </div>
+    <div *ngIf="item === 'cart'" class="empty-cart">
+        <img src="assets/sadImage.png">
+    </div>
 </div>

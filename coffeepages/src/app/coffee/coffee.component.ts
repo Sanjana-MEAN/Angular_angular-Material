@@ -52,7 +52,7 @@ export class CoffeeComponent implements OnInit{
     cart.push(coffeeClone);
     // console.log('storage', coffee);
     localStorage.setItem('cart', JSON.stringify(cart));
-    this.show.sendSuccess();
+    this.show.addedToCart();
   }
 
   ingredients(coffeeId: number){
@@ -71,12 +71,8 @@ export class CoffeeComponent implements OnInit{
     wish.push(wishClone);
     localStorage.setItem('wish', JSON.stringify(wish));
     this.wishlist = wish;
-    this.show.sendSuccess();
+    this.show.wishlisted();
   }
-  // isInWishlist(coffeeid: any){
-  //   const wish = this.loadWishlist();
-  //   return wish.some((item: { id: any; }) => item.id === coffeeid);
-  // }
 }
 
    

@@ -4,35 +4,27 @@
     gap: 50px;
     padding-top: 15px;
     padding-inline-start: 40px;
-    /* background-color: blue; */
     background-color: #372c2a;
 }
-
+.head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  border: 40px solid #372c2a;
+  color: #dac4b5;
+  font-family: myFont;
+  line-break: strict;
+}
 .example-card{
-  /* background-color: #dac4b5; */
-    /* flex: 1 1 calc(33.333% - 20px);  */
-  /* box-sizing: border-box;  */
-  /* padding: 10px; */
-  /* height: auto; */
-  /* background: #f1f1f1;  */
-  /* border: 1px solid #ccc;  */
-  /* border-radius: 5px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap-reverse; */
     padding: 10px;
     width: 30%;
     height: auto;
     border-radius: 10px;
-    background-color: #dac4b5;;
+    background-color: #dac4b5;
 }
  .example-header-image{
-  /* display: flex;
-  flex-wrap: wrap;
-  width: 0.5%;
-  height: auto; */
-  /* width: 1cm; */
-  /* height: 1cm; */
   background-size: cover;
   height: 40px;
     width: 40px;
@@ -43,7 +35,6 @@
  }  
 .para{
   font-weight: bold;
-  /* color: #b8b4aa; */
   color: #372c2a;
   font-family: secondFont;
   padding: 10px;
@@ -51,19 +42,16 @@
 }
 .location{
   font-weight: bold;
-  /* color: #b8b4aa; */
   color: #372c2a;
   height: 60px;
 }
 .title{
   font-weight: bold;
-  /* color: #b8b4aa; */
   color: #372c2a;
   font-family: secondFont;
 }
 .subtitle{
   font-weight: bold;
-  /* color: #b8b4aa; */
   color: #372c2a;
 }
 .favorite-icon, .share-icon{

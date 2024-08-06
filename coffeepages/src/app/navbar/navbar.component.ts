@@ -8,9 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  // enteredValue: any;
-  // @Output() searchEvent =new  EventEmitter<any>();
+  
   enteredValue: any;
+  sidenavMode: 'side' | 'over' = 'side';
+  sidenavOpened: boolean = true;
 
   constructor(public authService:AuthService, public searchService:SearchService, public router:Router){}
 
@@ -19,9 +20,14 @@ export class NavbarComponent {
     this.router.navigate(['allcoffees']);
   }
 
-//   Onsearch(enteredValue: any){
-//     this.searchEvent.emit(enteredValue);
-    
-//   }
+  toggle(){
+    if (this.sidenavMode === 'side') {
+      this.sidenavMode = 'over'; 
+      this.sidenavOpened = false; 
+    } else {
+      this.sidenavMode = 'side'; 
+      this.sidenavOpened = true; 
+    }
+  }
 
 }

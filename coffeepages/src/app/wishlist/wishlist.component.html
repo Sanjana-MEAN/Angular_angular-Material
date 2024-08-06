@@ -1,5 +1,6 @@
 <div *ngIf="cartItems.length === 0">
-<app-empty></app-empty>
+  <h2 class="heading">Add Coffees to Your Wishlist</h2>
+  <app-empty [item]="'wishlist'"></app-empty>
 </div>
 <div class="container" *ngIf="cartItems.length > 0">
     <mat-card *ngFor="let coffee of cartItems" class="example-card">

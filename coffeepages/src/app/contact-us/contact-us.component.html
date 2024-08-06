@@ -1,15 +1,15 @@
 <div class="container">
-    <header style="align-items: center;">
+    <header style="align-items: center; margin-bottom: 20px; border-top: 25px;">
         <h1 class="header">Contact Us</h1>
     </header>
 
     <div class="content">
-        <h2 class="heading" style="align-items: center;">We'd Love to Hear From You</h2>
+        <h2 class="heading" style="align-items: center; margin-bottom: 20px;">We'd Love to Hear From You</h2>
         <p class="paragraph">
             Whether you have a question about our menu, feedback on our service, or any other inquiry, our team is ready to answer all your questions. Fill out the form below, and we'll get back to you as soon as possible.
         </p>
 
-        <form class="form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" style="align-items: center;">
+        <form class="form" [formGroup]="contactForm" style="display:flex; align-items: center;margin-bottom: 20px; border-left: 50px;">
             <div>
                 <div>
                     <mat-form-field class="example-full-width">
@@ -35,26 +35,13 @@
         </form>
 
         <div>
-            <section>
+            <section style="margin-bottom: 20px;" (click)="onSubmit()">
                 <button style="align-items: center;"  class="button" mat-stroked-button type="submit">Submit</button>
             </section>
         </div>
-
-        <!-- <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form> -->
     </div>
 
-    <footer>
+    <footer style="margin-bottom: 20px;">
         <p class="paragraph">Contact Information:</p>
         <p class="paragraph">Email: support@coffeebliss.com</p>
         <p class="paragraph">Phone: (555) 123-4567</p>

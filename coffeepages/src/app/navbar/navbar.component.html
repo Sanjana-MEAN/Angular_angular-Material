@@ -16,8 +16,8 @@
   </mat-toolbar>
   
   <mat-drawer-container class="example-container">
-    <mat-drawer class="sidenav" #sidenav mode="side" opened="false">
-      <mat-nav-list class="sidelist">
+    <mat-drawer class="sidenav" #sidenav [mode]="sidenavMode" [opened]="sidenavOpened" (click)="toggle()">
+      <mat-nav-list class="sidelist" >
         <a mat-list-item routerLink="/login"></a>
         <a mat-list-item routerLink="/profile" >Profile</a>
         <!-- <a mat-list-item routerLink="/home">Home</a> -->
